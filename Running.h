@@ -17,6 +17,8 @@ public:
 	int getDistance() const;
 	void setDistance(int);
 
+	double calcSpeed() const;//Calculate average running speed
+
 	void displayInfo() const;//Overload display info function
 };
 
