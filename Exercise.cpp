@@ -19,6 +19,10 @@ int Exercise::getDuration() const
 }
 void Exercise::setDuration(int dur)
 {
+	if (dur < 0)
+	{
+		throw invalid_argument("Error. Duration must be nonnegative\n");
+	}
 	duration = dur;
 }
 
@@ -45,7 +49,7 @@ void Exercise::setDate(string month, string day, string year)
 }
 
 //Display info
-void Exercise::displayInfo()
+void Exercise::displayInfo() const
 {
 	cout << "Date: " << date << "\n";
 	cout << "Duration: " << duration << " minutes\n";

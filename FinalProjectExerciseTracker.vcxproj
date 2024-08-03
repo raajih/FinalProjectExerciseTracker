@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Exercise.h" />
+    <ClInclude Include="Running.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="Running.cpp" />
     <ClCompile Include="WorkoutTracker.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

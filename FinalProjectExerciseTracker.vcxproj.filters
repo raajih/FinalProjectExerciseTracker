@@ -18,12 +18,18 @@
     <ClInclude Include="Exercise.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Running.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercise.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WorkoutTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Running.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

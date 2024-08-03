@@ -1,13 +1,15 @@
 #include "Exercise.h"
+#include "Running.h"
 
 int main()
 {
-	Exercise workout1, workout2;
+	 Running workout1, workout2;
 	try
 	{
-		workout2.setDuration(20);
-		workout2.setDate("0", "16", "2000");
 		//TEST
+		workout2.setDuration(20);
+		workout2.setDate("02", "16", "2000");
+		workout2.setDistance(-12);
 		workout1.displayInfo();
 		workout2.displayInfo();
 
