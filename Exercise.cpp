@@ -8,6 +8,10 @@ Exercise::Exercise()//Default
 }
 Exercise::Exercise(int dur, string day)
 {
+	if (day.length() != 10)
+	{
+		throw invalid_argument("Error. Invalid date format.");
+	}
 	duration = dur;
 	date = day;
 }
