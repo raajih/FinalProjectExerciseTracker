@@ -2,11 +2,13 @@
 
 Lifting::Lifting() : Exercise()//Default constructor
 {
+	type = "Lift";
 	muscleGroup = "No muscle group added";
 }
 
 Lifting::Lifting(int dur, string day, string muscle) : Exercise(dur, day)
 {
+	type = "Lift";
 	muscleGroup = muscle;
 }
 
@@ -23,7 +25,16 @@ void Lifting::setMuscleGroup(string muscle)
 //Display info
 void Lifting::displayInfo() const
 {
+	cout << type << "\n";
 	Exercise::displayInfo();//Call original displayInfo
-	cout << "Exercise Type: Weight Lifting\n"
-		<< "Muscle Group: " << muscleGroup << "\n";
+	cout << "Muscle Group: " << muscleGroup << "\n";
+}
+
+//Overload = 
+Lifting& Lifting:: operator=(const Lifting& right)
+{
+	setDuration(right.getDuration());//Set the duration
+	setDate(right.getDate());//Set the date
+	muscleGroup = right.muscleGroup;//Set distance
+	return *this;
 }

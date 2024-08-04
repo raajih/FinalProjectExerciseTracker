@@ -3,15 +3,17 @@
 //Constructors
 Running::Running() : Exercise()
 {
+	type = "Run";
 	distance = 0;
 }
-Running::Running(int dur, string day, int dis) : Exercise(dur, day)
+Running::Running(int dur, string day, double dis) : Exercise(dur, day)
 {
+	type = "Run";
 	distance = dis;
 }
 
 //Getter and setter for distance
-int Running::getDistance() const
+double Running::getDistance() const
 {
 	return distance;
 }
@@ -32,7 +34,7 @@ double Running::calcSpeed() const
 		throw invalid_argument("Error. Cannot divide by zero");
 	}
 	double speed;
-	speed = (distance / (getDuration() / 60));//Divide miles by hour to get mph (have to convert minutes to hour)
+	speed = (distance / (getDuration() / 60.0));//Divide miles by hour to get mph (have to convert minutes to hour)
 	return speed;
 
 }
@@ -40,8 +42,17 @@ double Running::calcSpeed() const
 //Display info
 void Running::displayInfo() const
 {
+	cout << type << "\n";
 	Exercise::displayInfo();//Call original display info
-	cout << "Workout Type: Run\n";
 	cout << "Distance: " << distance << " miles\n";
 	cout << "Average speed: " << calcSpeed() << " mph\n";
+}
+
+//Overload = 
+Running& Running:: operator=(const Running& right)
+{
+	setDuration(right.getDuration());//Set the duration
+	setDate(right.getDate());//Set the date
+	distance = right.distance;//Set distance
+	return *this;
 }

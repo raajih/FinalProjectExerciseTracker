@@ -21,7 +21,7 @@ public:
 
 	//Getter and setter for date
 	string getDate() const;
-	void setDate(string, string, string);
+	void setDate(string);
 
 	//Display info
 	virtual void displayInfo() const;

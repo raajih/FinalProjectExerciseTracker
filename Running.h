@@ -6,20 +6,23 @@
 class Running : public Exercise
 {
 private:
-	int distance;//In miles
+	string type;//Run or lift
+	double distance;//In miles
 
 public:
 	//Constructors
 	Running();
-	Running(int, string, int);
+	Running(int, string, double);
 
 	//Getter and setter for distance
-	int getDistance() const;
+	double getDistance() const;
 	void setDistance(int);
 
 	double calcSpeed() const;//Calculate average running speed
 
 	void displayInfo() const override;//Overload display info function
+
+	Running& operator=(const Running&);//Overload = operator
 };
 
 #endif

@@ -31,21 +31,10 @@ string Exercise::getDate() const
 {
 	return date;
 }
-void Exercise::setDate(string month, string day, string year)
+void Exercise::setDate(string dateNew)
 {
-	if (month.length() != 2)//If month isn't two digits
-	{
-		throw invalid_argument("Error. Month needs TWO digits\n");
-	}
-	if (day.length() != 2)//If day isn't two digits
-	{
-		throw invalid_argument("Error. Day needs TWO digits\n");
-	}
-	if (year.length() != 4)//If year isn't four digits
-	{
-		throw invalid_argument("Error. Year needs FOUR digits\n");
-	}
-	date = (month + "-" + day + "-" + year);
+	
+	date = dateNew;
 }
 
 //Display info

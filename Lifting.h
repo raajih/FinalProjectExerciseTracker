@@ -6,7 +6,7 @@
 class Lifting : public Exercise
 {
 private:
-	string muscleGroup;
+	string type, muscleGroup;
 
 public:
 	//Constructors
@@ -19,6 +19,8 @@ public:
 
 	//Overload display info function
 	void displayInfo() const override;
+
+	Lifting& operator=(const Lifting&);//Overload = operator
 };
 
 #endif
