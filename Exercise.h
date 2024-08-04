@@ -24,7 +24,7 @@ public:
 	void setDate(string, string, string);
 
 	//Display info
-	void displayInfo() const;
+	virtual void displayInfo() const;
 
 };
 

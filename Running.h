@@ -19,7 +19,7 @@ public:
 
 	double calcSpeed() const;//Calculate average running speed
 
-	void displayInfo() const;//Overload display info function
+	void displayInfo() const override;//Overload display info function
 };
 
 #endif

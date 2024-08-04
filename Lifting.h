@@ -18,7 +18,7 @@ public:
 	void setMuscleGroup(string);
 
 	//Overload display info function
-	void displayInfo() const;
+	void displayInfo() const override;
 };
 
 #endif
