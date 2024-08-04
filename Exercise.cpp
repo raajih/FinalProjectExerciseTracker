@@ -4,7 +4,7 @@
 Exercise::Exercise()//Default
 {
 	duration = 0;
-	date = "";
+	date = "No date added";
 }
 Exercise::Exercise(int dur, string day)
 {

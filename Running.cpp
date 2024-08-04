@@ -41,5 +41,7 @@ double Running::calcSpeed() const
 void Running::displayInfo() const
 {
 	Exercise::displayInfo();//Call original display info
+	cout << "Workout Type: Run\n";
 	cout << "Distance: " << distance << " miles\n";
+	cout << "Average speed: " << calcSpeed() << " mph\n";
 }

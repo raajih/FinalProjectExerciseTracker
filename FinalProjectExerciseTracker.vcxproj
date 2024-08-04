@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Exercise.h" />
+    <ClInclude Include="Lifting.h" />
     <ClInclude Include="Running.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="Lifting.cpp" />
     <ClCompile Include="Running.cpp" />
     <ClCompile Include="WorkoutTracker.cpp" />
   </ItemGroup>
